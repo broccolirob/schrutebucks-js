@@ -1,5 +1,5 @@
 const Block = require("./block");
-const GENESIS_DATA = require("./config");
+const { GENESIS_DATA } = require("./config");
 
 describe("Block", () => {
   const timestamp = "a-date";
