@@ -18,8 +18,6 @@ if (process.env.GENERATE_PEER_PORT === "true") {
 
 const PORT = PEER_PORT || DEFAULT_PORT;
 
-setTimeout(() => pubsub.broadcastChain(), 1000);
-
 app.use(bodyParser.json());
 
 app.get("/api/blocks", (req, res) => {
@@ -49,5 +47,7 @@ const syncChains = () => {
 
 app.listen(PORT, () => {
   console.log(`Listening at localhost:${PORT}`);
-  syncChains();
+  if (PORT !== DEFAULT_PORT) {
+    syncChains();
+  }
 });
