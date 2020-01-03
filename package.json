@@ -16,21 +16,21 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cross-env": "^5.2.0",
-    "eslint": "^6.0.0",
-    "eslint-config-prettier": "^5.0.0",
-    "jest": "^24.8.0",
-    "prettier": "^1.17.1"
+    "cross-env": "^5.2.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^5.1.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "elliptic": "^6.5.0",
+    "elliptic": "^6.5.2",
     "express": "^4.17.1",
     "hex-to-binary": "^1.0.1",
-    "nodemon": "^1.19.1",
+    "nodemon": "^1.19.4",
     "redis": "^2.8.0",
     "request": "^2.88.0",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.3"
   },
   "jest": {
     "testEnvironment": "node"
